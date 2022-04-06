@@ -9,21 +9,42 @@
     <link rel="icon" type="image/x-icon" href="images/favicon (4).ico">
 </head>
 <body>
- <header class="text-black-600  body-font">
+<style>.sticky {
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
+</style>
+<script>
+ window.onscroll = function() {myFunction()};
+ 
+ var header = document.getElementById("myHeader");
+ var sticky = header.offsetTop;
+ 
+ function myFunction() {
+   if (window.pageYOffset > sticky) {
+     header.classList.add("sticky");
+   } else {
+     header.classList.remove("sticky");
+   }
+ }
+ </script>
+ <header class="text-black-600 bg-gray-100  body-font" id="myHeader">
    <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
      <a class="flex title-font font-medium items-center text-blue-600 mb-4 md:mb-0">
        <img src="images/favicon.ico" alt="logo">
        <span class="ml-3 text-xl">Bibliophile Connect</span>
      </a>
      <nav class="md:mr-auto md:ml-4 md:py-1 md:pl-4 md:border-l md:border-black-600	flex flex-wrap items-center text-base justify-center ">
-       <a href="index.html"class="mr-5 hover:bg-blue-100 p-1 rounded-lg">Home</a>
+       <a href="welcome.html"class="mr-5 hover:bg-blue-100 p-1 rounded-lg">Home</a>
        <a href="Fiction.html"class="mr-5 hover:bg-blue-100 p-1 rounded-lg">Fiction</a>
        <a href="Non-Fiction.html"class="mr-5 hover:bg-blue-100 p-1 rounded-lg">Non-Fiction</a>
        <a href="Educational.html"class="mr-5 hover:bg-blue-100 p-1 rounded-lg">Educational</a>
        <a href="comics.html"class="mr-5 hover:bg-blue-100 p-1 rounded-lg">Comics</a>
+       <a href="contactus.html"class="mr-5 hover:bg-blue-100 p-1 rounded-lg">Contact Us</a>
        <a href="Aboutus.html"class="mr-5 hover:bg-blue-100 p-1 rounded-lg">About Us</a>
      </nav>
-     <a href="mailto:bibliophileconnect.social@gmail.com"class="inline-flex items-center bg-blue-100 border-0 py-1 px-3 focus:outline-none hover:bg-green-200 rounded text-base mt-4 md:mt-0">Contact Us
+     <a href="index.html"class="inline-flex items-center bg-blue-100 border-0 py-1 px-3 focus:outline-none hover:bg-green-200 rounded text-base mt-4 md:mt-0">Log out
        <svg fill="none" stroke="black" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="w-4 h-4 ml-1" viewBox="0 0 24 24">
          <path d="M5 12h14M12 5l7 7-7 7"></path>
        </svg>
@@ -31,12 +52,20 @@
    </div>
  </header>
 <hr>
+<style>
+  body {
+    background-image: url("images/edubg.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+    background-size: 100% 100%;
+  }
+</style>
 
-<section class="text-black-600 bg-gray-100 body-font">
+<section class="text-black-600  body-font">
   <div class="container px-5 py-24 mx-auto">
     <div class="flex flex-wrap w-full mb-0">
       <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-black-900">Ocean of Knowledge
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">Ocean of Knowledge
           <br>Educational books
         </h1>
         <div class="h-1 w-20 bg-indigo-500 rounded"></div>
@@ -49,19 +78,19 @@
   </div>
 </section>
 <hr>
-<section class="text-black-600 bg-gray-100 body-font">
+<section class="text-black-600  body-font">
   <div class="container px-5 py-10 mx-auto">
     <header class="text-gray-600 body-font">
       <div class="container mx-auto my-1 flex flex-wrap p-2 flex-col md:flex-row items-center">
         <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center">
-          <a href="newedu.html"class="mr-5 hover:bg-green-200 p-3 rounded-lg">From Rising Educators</a>
-          <a href="oldedu.html"class="mr-5 hover:bg-green-200 p-3 rounded-lg">From Legacy Educators</a>
+          <a href="newedu.html"class="mr-5 bg-blue-100 hover:bg-green-200 p-3 rounded-lg">From Rising Educators</a>
+          <a href="oldedu.html"class="mr-5 bg-blue-100 hover:bg-green-200 p-3 rounded-lg">From Legacy Educators</a>
         </nav>
       </div>
     </header>
     <div class="flex flex-wrap w-full mb-5">
       <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-black-900">From Rising Educators</h1>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">From Rising Educators</h1>
       </div>
     </div>
     <div class="flex flex-wrap -m-4">
@@ -96,11 +125,11 @@
   </div>
 </section>
 <hr>
-<section class="text-black-600 bg-gray-100 body-font">
+<section class="text-black-600  body-font">
   <div class="container px-5 py-10 mx-auto">
     <div class="flex flex-wrap w-full mb-20">
       <div class="lg:w-1/2 w-full mb-6 lg:mb-0">
-        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-black-900">From Legacy Educators</h1>
+        <h1 class="sm:text-3xl text-2xl font-medium title-font mb-2 text-white">From Legacy Educators</h1>
       </div>
     </div>
     <div class="flex flex-wrap -m-4">
@@ -135,7 +164,7 @@
   </div>
 </section>
 <hr>
-<section class="text-black-100 bg-gray-100 body-font relative">
+<section class="text-black-100  body-font relative">
   <div class="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
       <div class="bg-blue-100 relative flex flex-wrap py-6 rounded shadow-md">
         <div class="lg:w-1/1.5 px-6">
@@ -153,7 +182,7 @@
   </div>
 </section>
 <hr>
-<footer class="text-black-600 body-font">
+<footer class="text-black-600 bg-gray-100 body-font">
   <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
     <a class="flex title-font font-medium items-center text-blue-600 mb-4 md:mb-0">
       <img src="images/favicon.ico" alt="logo">
@@ -170,4 +199,18 @@
   </div>
 </footer>
 </body>
+<script>
+  window.onscroll = function() {myFunction()};
+  
+  var header = document.getElementById("myHeader");
+  var sticky = header.offsetTop;
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      header.classList.add("sticky");
+    } else {
+      header.classList.remove("sticky");
+    }
+  }
+  </script>
 </html>
