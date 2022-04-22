@@ -4,9 +4,8 @@ var attempt = 3; // Variable to count number of attempts.
 function validate(){
 var username = document.getElementById("username").value;
 var password = document.getElementById("password").value;
-if ( username == "Yash" || "AD" || "Gouri" || "Uttu" && password == "123") {
-window.location ="welcome.html";// Redirecting to other page.
-return false;
+if ( username == "Yash" && password == "123123") {
+window.location ="welcome.html";
 }
 else{
 attempt --;// Decrementing by one.
