@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.7/tailwind.min.css" integrity="sha512-y6ZMKFUQrn+UUEVoqYe8ApScqbjuhjqzTuwUMEGMDuhS2niI8KA3vhH2LenreqJXQS+iIXVTRL2iaNfJbDNA1Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <style>
+            .main-container {
+                height: 100vh;
+            }
+            input:focus-visible {
+                outline: none;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="flex justify-center items-center main-container bg-gradient-to-b from-yellow-500 via-red-500 to-pink-500">
+            <div class="w-1/2 shadow-lg p-5 rounded bg-white">
+                <p class="font-bold text-2xl text-center mt-3 mb-8">Signup</p>
+                <div class="mb-3">
+                    <label>Username</label>
+                    <br />
+                    <input
+                        type="text"
+                        placeholder="Type your username"
+                        class="border-b-2 pt-3 pb-3 mb-3 w-full"
+                    />
+                </div>
+                <div class="mb-3">
+                    <label>Name</label>
+                    <br />
+                    <input
+                        type="text"
+                        placeholder="Type your name"
+                        class="border-b-2 pt-3 pb-3 mb-3 w-full"
+                    />
+                </div>
+                <div>
+                    <label>Password</label>
+                    <br />
+                    <input
+                        type="password"
+                        placeholder="Type your password"
+                        class="border-b-2 pt-3 pb-3 mb-3 w-full"
+                    />
+                </div>
+                <button
+                    class="block bg-gradient-to-r from-yellow-500 via-red-500 to-pink-500 text-white pt-3 pb-3 pl-6 pr-6 rounded w-full mt-5"
+                >
+                    Signup
+                </button>
+                <a href="login.html" class="mt-6 mb-3 text-center block">Already have an account?</a>
+            </div>
+        </div>
+    </body>
+</html>
